@@ -1,0 +1,174 @@
+body {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA; /* Light terminal background: FAFAFA */
+    color: #333333; /* Dark gray text */
+}
+
+header {
+        /* Slightly darker header for improved contrast against page background */
+        background-color: #E0E0E0; /* darker than page background */
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* subtle separation from the page */
+header {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+header input {
+    padding: 0.5rem;
+    margin-top: 10px;
+    font-size: 1rem;
+    width: 50%;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF; /* White input background */
+    border: 1px solid #CCC;
+    color: #333333;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+main h2 {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #DDD;
+    text-decoration: none;
+}
+
+/* Center main content and keep text readable on wide screens */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  box-sizing: border-box;
+}
+
+/* Summary container: centered, padded, and with a subtle border */
+#summary {
+    max-width: 720px;        /* reduce inner width so there's whitespace inside main */
+    margin: 2.25rem auto;    /* more vertical whitespace around the summary */
+    padding: 1.5rem 1.75rem; /* larger padding for breathing room */
+    box-sizing: border-box;
+    border: 2px solid #dcdcdc; /* thicker, slightly darker border for clearer delineation */
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #222222;
+    box-shadow: 0 8px 24px rgba(12, 18, 24, 0.04);
+}
+
+/* Slight spacing for paragraphs inside the summary */
+#summary p {
+  margin: 0 0 0.75rem 0;
+  line-height: 1.5;
+}
+
+#contact-info-section {
+    max-width: 720px;        /* reduce inner width so there's whitespace inside main */
+    margin: 2.25rem auto;    /* more vertical whitespace around the summary */
+    padding: 1.5rem 1.75rem; /* larger padding for breathing room */
+    box-sizing: border-box;
+    border: 2px solid #dcdcdc; /* thicker, slightly darker border for clearer delineation */
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #222222;
+    box-shadow: 0 8px 24px rgba(12, 18, 24, 0.04);
+}
+
+/* Slightly reduce padding on very small screens */
+@media (max-width: 480px) {
+  main {
+    padding: 0.75rem;
+  }
+  #summary {
+        padding: 0.9rem;
+        margin: 1rem 0; /* keep compact vertical spacing on small screens */
+  }
+}
+
+#articles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-post {
+    background-color: #FFFFFF; /* White background */
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #DDD;
+    box-shadow: none;
+}
+
+.blog-post h2 {
+    margin-top: 0;
+    color: #000000;
+    font-weight: normal;
+}
+
+#summary p {
+    margin: 0 0 0.75rem 0;
+    line-height: 1.6;
+}
+
+#title {
+  text-align: center;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.nav-container {
+  width: 50%;          /* middle 50% of screen */
+  margin: 0 auto;      /* center it horizontally */
+}
+
+nav li .inner {
+  display: block;
+  padding: 8px 0;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+nav li:hover .inner,
+nav li.active .inner {
+  background: #ddd;
+}
